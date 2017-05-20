@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "RobotoSlabRegular";
+    src: url("font/RobotoSlabRegular.eot");
+    src: url("font/RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
+    url("font/RobotoSlabRegular.woff") format("woff"),
+    url("font/RobotoSlabRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+	background-color: #E6E6E6;
+	font-family: 'Roboto Slab', serif; 
+}
+#main{
+	margin-right: 15%;
+	margin-left: 15%;
+	
+}
+table,tr,td{
+	margin:3%;
+	border: 1px solid #3B3B3B;
+	width: auto;
+	font-size: 14px;
+	align-content:  center;
+}
+td{
+	margin-right: 10%;
+	margin-left: 10%;
+	width: 10px; 
+}
+table input {
+	width: 50px;
+}
+
+#table{
+	display: none;
+	/*padding: 3% 5% 5% 10%;*/
+}
+
+input[type="button"]{
+	font-family: 'Roboto Slab', serif; 
+    background-color: #E6E6E6; /* Green */
+    border: 1px solid #3B3B3B;
+    color: #3B3B3B	;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+   -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+input[type="button"]:hover{
+	background-color: #4CAF50; /* Green */
+    color: white;
+}
+.some_margin{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+footer{
+
+    font-size: 10px;
+}
+hr{
+    margin-top: 10%;
+}

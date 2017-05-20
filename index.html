@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Розрахунок статистичних даних</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="bower_components/chartist/dist/chartist.min.css">
+</head>
+<body>
+
+<div id="main" align="center">
+
+	<div id="header" align="center">
+
+		<div id="askvars">
+			Заповнити дані таблиці?
+			<input type="button" id="yesButton" value="Так" >
+			<input type="button" id="noButton" value="Ні" >
+		</div>
+
+		<div id="matrix">
+			<h3>Введіть таблицю:</h3>
+			<table>
+				<tr>
+					<td>Рядків:</td><td><input type="text" name="rows"></td>
+				</tr>
+				<tr>
+					<td>Стовпців:</td><td><input type="text" name="columns"></td>
+				</tr>
+			</table>
+
+			<input type="button" name="draw_table_button" value="Створити таблицю">
+			<div id="add_matrix"></div>
+			<input type="button" name="apply_matrix_button" value="Продовжити" style="display: none;">
+		</div>
+	<div id="or"><h2>АБО</h2></div>
+		<div id="frequency">
+			<h3>Введіть статистичний розподіл:</h3>
+			<table>
+				<tr>
+				<td>Довжина:</td><td><input type="text" name="frequency_length"></td>
+				</tr>
+			</table>
+			<input type="button" id="create_frequency_button" value="Створити статистичний розподіл">
+		</div>
+		<div id="add_frequency"></div>
+		<input type="button" name="apply_frequency_button" value="Продовжити" style="display: none;">
+
+	</div>
+	<div id="labs" style="display: none">
+
+		<div id="first_lab">
+			<div id="labs_frequency">
+				<h2>Статистичний розподіл частот:</h2>
+			</div>
+			<div id="relative_frequency">
+				<h2>Статистичний розподіл відносних частот:</h2>
+			</div>
+			<div id="cumulative_frequency">
+				<h2>Статистичний розподіл накопичуваних частот:</h2>
+			</div>
+			<div id="relative_cumulative_frequency">
+				<h2>Статистичний розподіл відносних накопичуваних частот:</h2>
+			</div>
+			<div id="frequency_poligon">
+				<h2>Полігон частот:</h2>
+			</div>
+			<div id="relative_frequency_poligon">
+				<h2>Полігон відносних частот: </h2>
+			</div>
+			<div id="emperical_function">
+				<h2>Емпірична функція розподілу та графік:</h2>
+				<div id="ef1"><h2>F*(x)=</h2></div>
+				<div id="ef2"></div>
+				<div id="efchart"></div>
+			</div>
+			<hr>
+
+		</div>
+		
+		<div id="r">
+			<h2>Введіть кількість інтервалів:</h2>
+			<input type="text" name="r" style="padding-right: 5px">
+			<input type="button" name="r_button" value="Ввести">
+		</div>
+		
+		<div id="second_lab" style="display: none;">
+			
+			<div id="interval_frequency">
+				<h2>Інтервальний розподіл частот:</h2>
+			</div>
+			<div id="histograms">
+				<h2>Гістограми:</h2>
+			</div>
+			<div id="histogram2">
+
+			</div>
+			<div id="division_function">
+				<h2>Функція розподілу частот та її графік <br>для інтегрального розподілу вибірки:</h2>
+			</div>
+			<div id="mod_and_mediana"></div>
+			<hr>
+
+		</div>
+		
+		<div id="third_lab" style="display: none">
+			<div id="avg">
+				<h2>Вибіркове середнє:</h2>
+			</div>
+			<div id="sample_dispersion">
+				<h2>Вибіркова дисперсія:</h2>
+			</div>
+			<div id="avg_quad_deviation">
+				<h2>Середнє квадратичне відхилення:</h2>
+			</div>
+			<div id="corrected_dispersion">
+				<h2>Виправлена дисперсія:</h2>
+			</div>
+			<div id="corrected_avg_quad">
+				<h2>Виправлене середнє квадратичне</h2>
+			</div>
+			<div id="emperical_start_moments">
+				<h2>Емпіричні початкові моменти порядку k:</h2>
+			</div>
+			<div id="emperical_center_moments">
+				<h2>Емпіричні центральні моменти порядку k:</h2>
+			</div>
+			<div id="assymetry">
+				<h2>Асиметрія:</h2>
+			</div>
+			<div id="exces">
+				<h2>Екцес:</h2>
+			</div>
+			<div id="mod_mediana_scope_koef">
+				<h2>Мода, медіана, розмах та коефіцієнт варіацій:</h2>
+			</div>
+		</div>
+
+	</div>
+<footer>
+	<hr/>
+	<div align="right">
+		<p>Виконав:<br>
+		студент II курсу<br>
+		факультету інформаційних технологій<br>
+		напрямку "Інформатика"<br>
+		Дулішкович Георгій Іванович<br><br>
+
+			Викладач: Матяшовська Беата Олександрівна</p>
+	</div>
+</footer>
+</div>
+
+<script src="bower_components/chartist/dist/chartist.min.js"></script>
+<script src ="js/charts.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/run.js"></script>
+
+
+</body>
+
+</html>
