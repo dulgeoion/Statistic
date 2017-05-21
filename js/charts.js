@@ -101,3 +101,24 @@ function divisionChart(uniqx, newwcum) {
     new Chartist.Line("#division_function", data, options);
 }
 
+function empirical_regression_broken(yavg,x) {
+    var data = {
+        labels: x,
+        series: [yavg]
+    };
+
+    var options = {
+        showPoint: true,
+        lineSmooth: false,
+        height: 300,
+        axisX: {
+            showGrid: true,
+            showLabel: true
+        },
+        chartPadding: {
+            right: 40
+        }
+    };
+
+    new Chartist.Line('#wrap_erb', data, options);
+}

@@ -71,3 +71,7 @@ hr{
 input[name="x_count"], input[name="y_count"]{
     width: 50px;
 }
+td{
+    width: 20px;
+    text-align: center;
+}

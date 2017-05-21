@@ -6,6 +6,15 @@
     var array = [];
     var x = [];
     var y = [];
+    var yAvg = [];
+    var nx = [];
+    var ny = [];
+    var xavg;
+    var yavg;
+    var scc; //selective_correlation_coefficients  Вибіркові коефіцієнти кореляції
+    var general_sum;
+
+    var sigmax,sigmay;
 
     $("input[name='xy_button']").click(function () {
         createTable(1, parseInt($("input[name='x_count']").val())+1, "x_row");
@@ -34,7 +43,7 @@
     $("input[name='main_continue_button']").click(function () {
         readTable(array,parseInt($("input[name='x_count']").val())+1, parseInt($("input[name='y_count']").val())+1, x,y)
     });
-    $("#main_continue_button").click(function () {
+    $("input[name='main_continue_button']").click(function () {
         Lab();
     });
 
@@ -140,6 +149,17 @@
     function Lab() {
         $("#header").fadeOut();
         $("#lab").fadeIn(4000);
-
+        statistical_distribution(x,y,array);
+        selective_avg(x,y,array, yAvg);
+        fillNX(nx,x,y,array);
+        fillNY(ny,x,y,array);
+        console.log(nx);
+        console.log(ny);
+        mean_square_deviation(xavg,yavg,nx, ny, x, y, sigmax,sigmay, general_sum);
+        selective_correlation_coefficients(sigmax, sigmay, x,y,array,nx,ny, scc, general_sum, yavg, xavg);
+        selective_equation_regression_line(sigmax, sigmay, x,y,array,nx,ny, scc, general_sum, yavg, xavg, scc);
+        console.log("x = "+x);
+        console.log("yavg = "+yAvg);
+        empirical_regression_broken(yAvg, x);
 
     }
