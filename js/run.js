@@ -52,7 +52,7 @@
 
     });
 
-    $("#yesButton").click(function () {
+    var fill = $("#yesButton").click(function () {
         x.push(parseFloat(-2.0));
         x.push(parseFloat(-1.0));
         x.push(parseFloat(0.0));
@@ -156,7 +156,7 @@
         $("#assymetry").append(assymetry(m,avgQuadDeviation(sampleDispersion(x,n,countAll(n),avg (n,x)))));
         $("#exces").append(exces(m,avgQuadDeviation(sampleDispersion(x,n,countAll(n),avg (n,x)))));
         modEtc(x,n,avg(n,x),avgQuadDeviation(sampleDispersion(x,n,countAll(n),avg (n,x))));
-
     }
+
 })();
 

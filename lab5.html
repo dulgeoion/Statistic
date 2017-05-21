@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота 5</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="main" align="center">
+    <div id="header">
+        <div id="askvars">
+            Заповнити дані таблиць?
+            <input type="button" id="yesButton" value="Так" >
+            <input type="button" id="noButton" value="Ні" >
+        </div>
+
+        <div id="matrix">
+           <h3>Введіть кількість x:</h3>
+            <input type="text" name="x_count">
+            <h3>Введіть кількість y:</h3>
+            <input type="text" name="y_count"><br><br>
+            <input type="Button" value="Продовжити" name="xy_button">
+            <div id="x_row">
+
+            </div>
+            <div id="y_row">
+
+            </div>
+            <input type="button" name="full_table_button" value="Продовжити" style="display: none">
+            <div id="full_table">
+
+
+            </div>
+            <input type="button" name="main_continue_button" value="Продовжити" style="display: none">
+
+
+
+    </div>
+
+    </div>
+    <div id="lab" style="display: none;">
+
+        <div id="statistical_distribution">
+            <h2>Статистичний розподіл варіант x та y:</h2>
+        </div>
+
+    </div>
+
+<footer>
+    <hr/>
+    <div align="right">
+        <p>Виконав:<br>
+            студент II курсу<br>
+            факультету інформаційних технологій<br>
+            напрямку "Інформатика"<br>
+            Дулішкович Георгій Іванович<br><br>
+
+            Викладач: Матяшовська Беата Олександрівна</p>
+    </div>
+</footer>
+</div>
+</body>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="bower_components/chartist/dist/chartist.min.js"></script>
+<script src ="js/charts.js"></script>
+<script src="js/functionsLab5.js"></script>
+<script src="js/runLab5.js"></script>
+</html>

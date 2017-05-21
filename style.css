@@ -68,3 +68,6 @@ footer{
 hr{
     margin-top: 10%;
 }
+input[name="x_count"], input[name="y_count"]{
+    width: 50px;
+}
