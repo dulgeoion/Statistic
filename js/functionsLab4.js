@@ -58,14 +58,12 @@ function setStatisticFrequencyFromMatrix(array, arrx, arrn, rows, columns) {
             }
         }
     }
-    count = sortOnKeys(count);
-    for (key in count){
-        if (parseInt(key)!=NaN || parseInt(key)!= undefined){
-            arrx.push(parseInt(key));
-            arrn.push(parseInt(count[key]));
-        }
-
-        // console.log(key+" "+count[key]);
+    var keys = Object.keys(count);
+    keys.sort();
+    for (var i=0; i<keys.length; i++) { // now lets iterate in sort order
+        arrx.push(keys[i]);
+        arrn.push(count[keys[i]]);
+        /* do something with key & value here */
     }
     if (arrx[arrx.length-1] == NaN){
         delete arrx[arrx.length-1];

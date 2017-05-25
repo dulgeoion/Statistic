@@ -95,6 +95,9 @@
         n2.push(parseFloat(1.0));
         n2.push(parseFloat(2.0));
         n2.push(parseFloat(2.0));
+
+        // fromFile(x1,n1, "table1.txt");
+        // fromFile(x2,n2,"table2.txt");
         
         $("#header").fadeOut();
         //arraysToFrequency(x1,n1, x2, n2, false);
@@ -175,7 +178,7 @@
         arraysToFrequency(x2,n2, false);
         $("#labs_frequency").append("x = "+X2+"<br>");
         $("#labs_frequency").append("D = "+ D2 +"<br>");
-        $("#labs_frequency").append("N<sub>2</sub> = "+countAll(N2)+"<br>");
+        $("#labs_frequency").append("N<sub>2</sub> = "+N2+"<br>");
         $("#labs_frequency").append("σ = "+Math.pow(D2, 0.5)+"<br>");
 
         group_avg(X1, X2, N1, N2);
